@@ -6,25 +6,27 @@
 body {
   left: 50%;
   top: 100%;
-  background-color: black;
+  background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
+}
 
+.logo {
+  color: #ffc107;
+  font-size: 85px;
+  margin: 150px auto -70px;
+  text-transform: uppercase;
 }
-.logo{
-  color: #f9b81b;
-    font-size: 85px;
-    margin: 150px auto -70px;
-    text-transform: uppercase;
-}
+
 .card {
-  background-image: linear-gradient(163deg, #f9b81b 50%, rgb(0, 0, 0) 50%);
-    border-radius: 22px;
-    transition: all 0.3s;
-    width: 60%;
-    margin: auto;
-    transform: translateY(40%);
+  background-image: linear-gradient(163deg, #ffc107 50%, #1e1e1e 50%);
+  border-radius: 22px;
+  transition: all 0.3s;
+  width: 80%;
+  margin: auto;
+  transform: translateY(40%);
 }
+
 .card2 {
   border-radius: 26px;
   transition: all 0.2s;
@@ -48,9 +50,9 @@ body {
 
 #heading {
   text-align: center;
-  margin: 2em;
-  color:#f9b81b;
-  font-size: 2em;
+  margin: 1em;
+  color: #ffc107;
+  font-size: 3em;
 }
 
 .field {
@@ -70,7 +72,7 @@ body {
 .input-icon {
   height: 1.3em;
   width: 1.3em;
-  fill: #f9b81b
+  fill: #ffc107;
 }
 
 .input-field {
@@ -78,7 +80,7 @@ body {
   border: none;
   outline: none;
   width: 100%;
-  color:#f9b81b
+  color: #ffc107;
 }
 
 .form .btn {
@@ -99,28 +101,31 @@ body {
   border: none;
   outline: none;
   transition: 0.4s ease-in-out;
-  background-image: linear-gradient(163deg,#f9b81b 60%, rgb(5, 5, 5) 66%);
-  color: rgb(0, 0, 0);
+  background-image: linear-gradient(170deg, #ffc107 65%, #1e1e1e 66%);
+  color: #1e1e1e;
   transition: all 0.5s ease;
-
 }
+
 .button2:hover,
 .button1:hover {
-  background-image: linear-gradient(163deg, black 60%, #f9b81b 66%);
-    color: #f9b81b;
-}
-.button3 {
-  margin-bottom: 3em;
-  padding: 0.5em;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  transition: 0.4s ease-in-out;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  color: rgb(0, 0, 0);
+  background-image: linear-gradient(170deg, #1e1e1e 65%, #ffc107 66%);
+  color: #ffc107;
 }
 
-.button3:hover {
-  background-image: linear-gradient(163deg, #a00000fa 0%, #d10050 100%);
-  color: rgb(255, 255, 255);
+@media (max-width: 575.98px) {
+  .card {
+    width: 90%;
+  }
+  #heading {
+    font-size: 2rem;
+  }
+  .logo {
+    margin-top: 100px;
+    font-size: 70px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .card {
+    width: 70%;
+  }
 }
